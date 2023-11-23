@@ -1,0 +1,110 @@
+﻿version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Chào
+    - hello
+    - hi
+    - Chào buổi sáng
+    - Chào buổi tối
+    - Chào buổi trưa
+    - Xin chào
+    - Anh ơi
+    - Chị ơi
+    - Cậu ơi
+    - Êy
+    - Alo
+    - Hé lô
+
+- intent: goodbye
+  examples: |
+    - Tạm biệt
+    - Cảm ơn
+    - Hẹn gặp lại
+    - Gặp lại bạn sau
+    - Cút
+    - bye
+    - goodbye
+    - Tôi không cần hỗ trợ
+    - Không cần
+    - Gặp lại sau
+    - Bai
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - Tuyêt vời
+    - great
+    - Ảo diệu
+    - feeling like a king
+    - wonderful
+    - Tôi cảm thấy nó rất tôt
+    - Tốt
+    - Quá đỉnh
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - Quá tệ
+    - Tôi buồn
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - Bạn là gì?
+    - Mày là gì?
+    - Botchat là gì?
+    - Bạn có thể làm gì?
+- intents:
+  - book_tour:
+    examples:
+      - Tôi muốn đặt tour du lịch
+      - Tôi muốn đi du lịch
+      - Tôi cần một tour du lịch
+  - get_info:
+    examples:
+      - Tôi muốn biết về tour du lịch đến Paris
+      - Tôi muốn biết giá tour du lịch
+      - Tôi muốn biết thời gian khởi hành của tour du lịch
+entities:
+  - destination:
+    type: text
+  - start_date:
+    type: date
+  - end_date:
+    type: date
